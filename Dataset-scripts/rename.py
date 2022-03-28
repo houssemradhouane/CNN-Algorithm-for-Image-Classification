@@ -7,9 +7,9 @@ import os
 # Function to rename multiple files
 def main():
    
-    folder = "./CPU cooler"
+    folder = "../Dataset/validation/Speaker"
     for count, filename in enumerate(os.listdir(folder)):
-        dst = f"cooler-{str(count)}.jpg"
+        dst = f"speaker-{str(count+1)}.jpg"
         src =f"{folder}/{filename}"  # foldername/filename, if .py file is outside folder
         dst =f"{folder}/{dst}"
          
